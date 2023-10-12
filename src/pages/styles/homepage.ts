@@ -26,9 +26,4 @@ export const useStyles = makeStyles()(() => ({
     justifyContent: "space-between",
     flexWrap: "wrap",
   },
-  projectCard: {
-    marginBottom: "40px",
-    height: "150px",
-    width: "30%",
-  },
 }));

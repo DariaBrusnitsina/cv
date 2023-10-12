@@ -7,12 +7,13 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Work from "../components/Work";
 import Achievement from "../components/Achievement";
+import Project from "../components/Project";
 
 const projects = [
-  {title: 'new', discription: 'new prioddaskda'},
-  {title: 'new', discription: 'new prioddaskda'},
-  {title: 'new', discription: 'new prioddaskda'},
-  {title: 'new', discription: 'new prioddaskda'},
+  {title: 'Trivia Quiz', discription: 'Квиз-игра, в которой вы можете проверить свои знания, отвечая на вопросы из различных категорий и уровней сложности.', techs: ['TypeScript', 'React', 'Redux', 'MUI']},
+  {title: 'CA game', discription: 'new prioddaskda', techs: ['React', 'ThreeJS']},
+  {title: 'CA game', discription: 'new prioddaskda', techs: ['React', 'ThreeJS']},
+  {title: 'CA game', discription: 'new prioddaskda', techs: ['React', 'ThreeJS']},
 ]
 
 export const Homepage = () => {
@@ -40,10 +41,7 @@ export const Homepage = () => {
 
 
     <Box className={classes.projectsWrapper}>
-
-      {projects.map(p => <Card className={classes.projectCard}>{p.title}</Card>)}
-
-
+      {projects.map(p =>  <Project project={p}/>)}
     </Box>
   </Box>
 
@@ -56,10 +54,6 @@ export const Homepage = () => {
       <Achievement />
     </Box>
   </Box>
-
-
   </>
-
-
   )
 }

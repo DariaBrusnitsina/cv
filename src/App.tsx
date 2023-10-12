@@ -4,6 +4,7 @@ import { Homepage } from './pages/Homepage'
 import { About } from './pages/About'
 import { Box } from '@mui/material'
 import { useStyles } from './pages/styles/app'
+import Footer from './components/Footer'
 
 function App() {
   const { classes } = useStyles();
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
 				<Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </Box>
   )
 }
